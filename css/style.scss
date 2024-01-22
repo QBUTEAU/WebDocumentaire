@@ -1,0 +1,198 @@
+*{
+    font-family: "Montserrat";
+}
+
+:root{
+    --background : #1c0046;
+    --white : #e8e8e8;
+}
+
+@mixin flexOriginel(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 2.4rem;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+h4{
+    font-weight: 400;
+    font-size: 12px;
+}
+p{
+    width: 70%;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 6px 0;
+}
+
+a{
+    color: var(--white);
+}
+
+.arrow-down{
+    @include flexOriginel();
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    i{
+        color: var(--white);
+        font-size: 20px;
+    
+    }
+}
+.arrow-up{
+    @include flexOriginel();
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    top: 20px;
+    right: 20px;
+    i{
+        color: var(--white);
+        font-size: 20px;
+    
+    }
+}
+
+.axe-trois > div{
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+.header, .introduction, 
+.axe-un, .axe-un__video,
+.axe-deux, .axe-deux__video,
+.axe-trois, .axe-trois__video,
+.conclusion{
+    background-size: 100%;
+    background-position: center;
+    > div{
+        position: relative;
+        @include flexOriginel();
+        flex-direction: column;
+        min-height: 100vh;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        h2{
+            font-size: 35px;
+            margin-bottom: 30px;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+}
+
+.credits{
+        position: relative;
+        @include flexOriginel();
+        flex-direction: column;
+        min-height: 100vh;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        text-align: center!important;
+        h2{
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+        > p > a{
+            font-weight: 800;
+            font-size: 18px;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li{
+                margin: 0 10px;
+            }
+        }
+}
+
+.legendes{
+    margin:0;
+    margin-top: 20px;
+}
+
+.header{
+    background-image: url('../img/header.jpg');
+}
+.introduction{
+    background-image: url('../img/introduction.jpg');
+}
+.axe-un{
+    background-image: url('../img/axe-un.jpg');
+}
+.axe-un__video{
+    background-image: url('../img/axe-un__video.jpg');
+}
+.axe-deux{
+    background-image: url('../img/axe-deux.jpg');
+}
+.axe-deux__video{
+    background-image: url('../img/axe-deux__video.png');
+}
+.axe-trois{
+    background-image: url('../img/axe-trois.jpg');
+}
+.axe-trois__video{
+    background-image: url('../img/axe-trois__video.webp');
+}
+.conclusion{
+    background-image: url('../img/conclusion.jpg');
+}
+.credits{
+    background-image: url('../img/credits.jpg');
+}
+
+.introduction, .conclusion{
+    p{
+        width: 70%;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 150%;
+        text-align : justify;
+    }
+}
+
+iframe{
+    height: 300px;
+    width: 530px;
+    border: 2px solid var(--white);
+    border-radius: 10px;
+}
+.bloc-iframe{
+    @include flexOriginel();
+    gap: 30px;
+}
+
+.axe-un__video, .axe-deux__video, .axe-trois__video{
+    p{
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+}
