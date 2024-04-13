@@ -1,6 +1,6 @@
 # Web Documentaire - WR308
 
-Projet universitaire sur la réalisation d'un web documentaire, sur la thématique des invisibles, qui sont les personnes peu voire pas représentés dans la société.
+Projet universitaire du module WR308 (Écriture multimédia et narration) sur la réalisation d'un web documentaire, sur la thématique des invisibles, qui sont les personnes peu voire pas représentés dans la société.
 
 ### 📜 Description :
 J'ai décidé de réaliser un web documentaire sur les femmes dans le sport automobile, qui est un sport que j'affectionne beaucoup et les femmes y sont peu représentées, malgré la croissance du nombre d'entre elles qui participent aux courses dans le monde entier. Sur ce site, je mets en avant des histoires et des faits qui se passent ou qui se sont passés, le tout grâce à des sources journalistiques, écrites et audiovisuelles.
